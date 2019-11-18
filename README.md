@@ -6,7 +6,7 @@ Este proyecto pretende ser una plantilla base o _starter_ para empezar un proyec
 
 <p>&nbsp;</p>
 
-##Instalación de Flutter
+## Instalación de Flutter
 
 Instalar Flutter en el equipo de desarrollo:
 
@@ -30,9 +30,10 @@ Una vez instalado, comprobar la instalación con:
 `cd flutter-firebase-starter`
 
 <p>&nbsp;</p>
-##Configuración
 
-###Definición del Bundle ID en iOS
+## Configuración
+
+### Definición del Bundle ID en iOS
 
 Abrimos el proyecto de **iOS** en xCode: `~/flutter-firebase-starter/ios`
 
@@ -42,7 +43,7 @@ Después vamos a la sección de **_Signing & Capabilities_** y en el apartado **
 
 <p>&nbsp;</p>
 
-###Definición del Application ID en Android
+### Definición del Application ID en Android
 
 Vamos a la carpeta del proyecto donde se define el Gradle para la aplicación en:
 `~/flutter-firebase-starter/android/app/build.gradle`
@@ -62,7 +63,7 @@ defaultConfig {
 
 <p>&nbsp;</p>
 
-##Ejecución
+## Ejecución
 Una vez modificado el ID, comprobamos que la aplicación recién instalada se ejecuta en los dos sistemas (conectamos un móvil Android y un iPhone:
 
 `flutter run -d all`
@@ -71,21 +72,21 @@ Una vez modificado el ID, comprobamos que la aplicación recién instalada se ej
 
 <p>&nbsp;</p>
 
-##Configuración de Firebase
+## Configuración de Firebase
 Encontraremos la información detallada en inglés, [en este artículo](https://firebase.google.com/docs/flutter/setup).
 
 Vamos a la [consola de Firebase](https://console.firebase.google.com/).
 
 Creamos un proyecto nuevo y una vez creado, añadimos dos aplicaciones, una Android y otra iOS.
 
-###Aplicación iOS
+### Aplicación iOS
 Creamos una nueva aplicación iOS desde la consola de Firebase y rellenamos los datos básicos.
 
 Después, descargamos el fichero **_GoogleService-Info.plist_** de configuración.
 
 **_Importante:_** Abrimos xCode y con el botón derecho sobre la carpeta Runner/Runner, añadimos el fichero de configuración de Firebase y cerramos xCode.
 
-###Aplicación Android
+### Aplicación Android
 Creamos una nueva aplicación Android desde la consola de Firebase con los datos básicos.
 
 Para [añadir la clave de firma SHA](https://developers.google.com/android/guides/client-auth), desde un terminal vamos a la carpeta del proyecto y ejecutamos:
@@ -148,7 +149,7 @@ Finalmente ejecutamos:
 
 `flutter packages get`
 
-##Instalación de los plugins de Firebase
+## Instalación de los plugins de Firebase
 
 Añadimos los plugins que necesitemos de Firebase en `pubspec.yaml` en la sección de **_dependencies_**:
 
