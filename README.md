@@ -1,4 +1,4 @@
-# firebasestarter
+# Proyecto base de Flutter con Firebase
 
 A new Flutter project.
 
