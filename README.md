@@ -1,4 +1,6 @@
 # Proyecto base de Flutter con Firebase
+Otros idiomas: [English](https://github.com/ramoncardena/flutter-firebase-starter/blob/master/README.en.md)
+
 
 ## Descripción
 
