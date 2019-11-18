@@ -1,6 +1,8 @@
 # Proyecto base de Flutter con Firebase
+
 ## Descripción
-Este proyecto pretende ser una plantilla base o *starter* para empezar un proyecto con Flutter y Firebase de forma rápida.
+
+Este proyecto pretende ser una plantilla base o _starter_ para empezar un proyecto con Flutter y Firebase de forma rápida.
 
 <p>&nbsp;</p>
 
@@ -10,13 +12,11 @@ Instalar Flutter en el equipo de desarrollo:
 
 [https://flutter.dev/docs/get-started/install/macos](https://flutter.dev/docs/get-started/install/macos)
 
-
 Asegurarnos de que tenemos instalado Android Studio y Xcode:
 
 [Descarga de xCode](https://flutter.dev/docs/get-started/install/macos)
 
 [Descarga de Android Studio (para Mac)](https://flutter.dev/docs/get-started/install/macos)
-
 
 Una vez instalado, comprobar la instalación con:
 
@@ -25,6 +25,7 @@ Una vez instalado, comprobar la instalación con:
 <p>&nbsp;</p>
 
 ## Instalación proyecto
+
 `git clone git@github.com:ramoncardena/flutter-firebase-starter.git`
 `cd flutter-firebase-starter`
 
@@ -35,9 +36,9 @@ Una vez instalado, comprobar la instalación con:
 
 Abrimos el proyecto de **iOS** en xCode: `~/flutter-firebase-starter/ios`
 
-En la estructura del proyecto seleccionamos el root **Runner** y en la sección ***General*** en el apartado ***Identity*** definimos el Bundle ID (**Bundle identifier**) y la versión (**Version**).
+En la estructura del proyecto seleccionamos el root **Runner** y en la sección **_General_** en el apartado **_Identity_** definimos el Bundle ID (**Bundle identifier**) y la versión (**Version**).
 
-Después vamos a la sección de  ***Signing & Capabilities***  y en el apartado **Signing** seleccionamos el equipo adecuado (**Team**) para firmar el proyecto.
+Después vamos a la sección de **_Signing & Capabilities_** y en el apartado **Signing** seleccionamos el equipo adecuado (**Team**) para firmar el proyecto.
 
 <p>&nbsp;</p>
 
@@ -46,7 +47,7 @@ Después vamos a la sección de  ***Signing & Capabilities***  y en el apartado 
 Vamos a la carpeta del proyecto donde se define el Gradle para la aplicación en:
 `~/flutter-firebase-starter/android/app/build.gradle`
 
-Y modificamos la sección de ***defaultConfig*** con el application ID (***applicationId***) correspondiente y fijamos la versión mínima de SDK (***minSdkVersion***) a 21
+Y modificamos la sección de **_defaultConfig_** con el application ID (**_applicationId_**) correspondiente y fijamos la versión mínima de SDK (**_minSdkVersion_**) a 21
 
 ```
 defaultConfig {
@@ -58,6 +59,7 @@ defaultConfig {
 	testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 }
 ```
+
 <p>&nbsp;</p>
 
 ##Ejecución
@@ -79,9 +81,9 @@ Creamos un proyecto nuevo y una vez creado, añadimos dos aplicaciones, una Andr
 ###Aplicación iOS
 Creamos una nueva aplicación iOS desde la consola de Firebase y rellenamos los datos básicos.
 
-Después, descargamos el fichero ***GoogleService-Info.plist*** de configuración.
+Después, descargamos el fichero **_GoogleService-Info.plist_** de configuración.
 
-***Importante:*** Abrimos xCode y con el botón derecho sobre la carpeta Runner/Runner, añadimos el fichero de configuración de Firebase y cerramos xCode.
+**_Importante:_** Abrimos xCode y con el botón derecho sobre la carpeta Runner/Runner, añadimos el fichero de configuración de Firebase y cerramos xCode.
 
 ###Aplicación Android
 Creamos una nueva aplicación Android desde la consola de Firebase con los datos básicos.
@@ -135,7 +137,6 @@ dependencies {
 apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin
 ```
 
-
 Por último editamos el fichero `android/gradle.properties` y le añadimos:
 
 ```
@@ -147,11 +148,9 @@ Finalmente ejecutamos:
 
 `flutter packages get`
 
-
-
 ##Instalación de los plugins de Firebase
 
-Añadimos los plugins que necesitemos de Firebase en `pubspec.yaml` en la sección de ***dependencies***:
+Añadimos los plugins que necesitemos de Firebase en `pubspec.yaml` en la sección de **_dependencies_**:
 
 ```
 dependencies:
@@ -161,7 +160,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  
+
   ## AQUÍ DEPENDENCIAS FIREBASE Y OTRAS...
   firebase_core: ^0.4.1+5
   firebase_analytics: ^5.0.6
@@ -180,6 +179,3 @@ Una vez definidos los plugins, los instalamos:
 Y ejecutamos la app para ver que todo funciona:
 
 `flutter run -d all`
-
-
-
