@@ -113,6 +113,26 @@ Después, descargamos el fichero **_GoogleService-Info.plist_** de configuració
 
 **_Importante:_** Abrimos xCode y con el botón derecho sobre la carpeta Runner/Runner, añadimos el fichero de configuración de Firebase y cerramos xCode.
 
+Además, para que funcione la autenticación con ***Google Sign-In***, tenemos que añadir la clave correspondiente al fichero `ios/Runner/Info.plist`:
+
+```
+<!-- Google Sign-in Section -->
+<key>CFBundleURLTypes</key>
+<array>
+  <dict>
+    <key>CFBundleTypeRole</key>
+    <string>Editor</string>
+    <key>CFBundleURLSchemes</key>
+    <array>	
+<!-- TODO Replace this value: --> 
+<!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
+<string>com.googleusercontent.apps.861823949799-vcuujjn0vvnmcvjppkn</string>
+    </array>
+  </dict>
+</array>
+<!-- End of the Google Sign-in Section -->
+```
+
 ### Aplicación Android
 
 Creamos una nueva aplicación Android desde la consola de Firebase con los datos básicos.
@@ -208,3 +228,6 @@ Una vez definidos los plugins, los instalamos:
 Y ejecutamos la app para ver que todo funciona:
 
 `flutter run -d all`
+
+# Sobre mí
+Puedes conocer más sobre mí en [mi página web](https://ramoncardena.com) o leer mis artículos en el [blog](https://ramoncardena.com/blog)
