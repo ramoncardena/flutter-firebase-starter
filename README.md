@@ -1,10 +1,32 @@
 # Proyecto base de Flutter con Firebase
-Otros idiomas: [English](https://github.com/ramoncardena/flutter-firebase-starter/blob/master/README.en.md)
 
+Otros idiomas: [English](https://github.com/ramoncardena/flutter-firebase-starter/blob/master/README.en.md)
 
 ## Descripción
 
 Este proyecto pretende ser una plantilla base o _starter_ para empezar un proyecto con Flutter y Firebase de forma rápida.
+
+La apicación consta de dos pantallas: **Login** y **Home**
+
+### Pantalla Login
+
+En esta pantalla el usuario puede:
+
+* Iniciar sesión en Firebase con email/password
+* Iniciar sesión en Firebase con una cuenta de Google
+* Registrarse en Firebase con email/password
+
+### Pantalla Home
+
+Pantalla a la que llegamos una vez identificados y que nos permite finalizar la sesión.
+
+### Base de datos
+Además la aplicación crea un documento en la base de datos llamado **activity** en el que se guarda la hora y el id del usuario cada vez que se inicia sesión.
+
+
+### Objetivo
+El objetivo de este proyecto es **demostrar el uso de Flutter junto con Firebase** para crear de forma rápida una aplicación con un backend para gestionar usuarios y autenticación y una base de datos para almacenar información.
+
 
 <p>&nbsp;</p>
 
@@ -66,6 +88,7 @@ defaultConfig {
 <p>&nbsp;</p>
 
 ## Ejecución
+
 Una vez modificado el ID, comprobamos que la aplicación recién instalada se ejecuta en los dos sistemas (conectamos un móvil Android y un iPhone:
 
 `flutter run -d all`
@@ -75,6 +98,7 @@ Una vez modificado el ID, comprobamos que la aplicación recién instalada se ej
 <p>&nbsp;</p>
 
 ## Configuración de Firebase
+
 Encontraremos la información detallada en inglés, [en este artículo](https://firebase.google.com/docs/flutter/setup).
 
 Vamos a la [consola de Firebase](https://console.firebase.google.com/).
@@ -82,6 +106,7 @@ Vamos a la [consola de Firebase](https://console.firebase.google.com/).
 Creamos un proyecto nuevo y una vez creado, añadimos dos aplicaciones, una Android y otra iOS.
 
 ### Aplicación iOS
+
 Creamos una nueva aplicación iOS desde la consola de Firebase y rellenamos los datos básicos.
 
 Después, descargamos el fichero **_GoogleService-Info.plist_** de configuración.
@@ -89,6 +114,7 @@ Después, descargamos el fichero **_GoogleService-Info.plist_** de configuració
 **_Importante:_** Abrimos xCode y con el botón derecho sobre la carpeta Runner/Runner, añadimos el fichero de configuración de Firebase y cerramos xCode.
 
 ### Aplicación Android
+
 Creamos una nueva aplicación Android desde la consola de Firebase con los datos básicos.
 
 Para [añadir la clave de firma SHA](https://developers.google.com/android/guides/client-auth), desde un terminal vamos a la carpeta del proyecto y ejecutamos:

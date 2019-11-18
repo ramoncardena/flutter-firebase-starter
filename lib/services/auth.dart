@@ -81,7 +81,7 @@ class AuthService {
   }
 
   Future<void> updateUserData(FirebaseUser user) {
-    DocumentReference reportRef = _db.collection('reports').document(user.uid);
+    DocumentReference reportRef = _db.collection('activity').document(user.uid);
 
     return reportRef.setData({'uid': user.uid, 'lastActivity': DateTime.now()},
         merge: true);
