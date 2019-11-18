@@ -5,7 +5,30 @@ Other languages: [Spanish](https://github.com/ramoncardena/flutter-firebase-star
 
 This project aims to be a base template or _starter_ to start a project with Flutter and Firebase quickly.
 
+The application consists of two screens: **Login** and **Home**
+
+### Login Screen
+
+In this screen the user can:
+
+* Login to Firebase with email/password
+* Sign in to Firebase with a Google Account
+* Register in Firebase with email/password
+
+### Home Screen
+
+Screen that we arrive at once identified and that allows us to end the session.
+
+### Database
+In addition the application creates a document in the database called **activity** in which is saved the time and id of the user each time he logs in.
+
+
+### Objective
+The aim of this project is to **demonstrate the use of Flutter together with Firebase** to quickly create an application with a backend to manage users and authentication and a database to store information.
+
+
 <p>&nbsp;</p>
+
 
 ## Flutter Installation
 
