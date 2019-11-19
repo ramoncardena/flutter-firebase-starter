@@ -12,21 +12,21 @@ La apicación consta de dos pantallas: **Login** y **Home**
 
 En esta pantalla el usuario puede:
 
-* Iniciar sesión en Firebase con email/password
-* Iniciar sesión en Firebase con una cuenta de Google
-* Registrarse en Firebase con email/password
+- Iniciar sesión en Firebase con email/password
+- Iniciar sesión en Firebase con una cuenta de Google
+- Registrarse en Firebase con email/password
 
 ### Pantalla Home
 
 Pantalla a la que llegamos una vez identificados y que nos permite finalizar la sesión.
 
 ### Base de datos
+
 Además la aplicación crea un documento en la base de datos llamado **activity** en el que se guarda la hora y el id del usuario cada vez que se inicia sesión.
 
-
 ### Objetivo
-El objetivo de este proyecto es **demostrar el uso de Flutter junto con Firebase** para crear de forma rápida una aplicación con un backend para gestionar usuarios y autenticación y una base de datos para almacenar información.
 
+El objetivo de este proyecto es **demostrar el uso de Flutter junto con Firebase** para crear de forma rápida una aplicación con un backend para gestionar usuarios y autenticación y una base de datos para almacenar información.
 
 <p>&nbsp;</p>
 
@@ -50,8 +50,11 @@ Una vez instalado, comprobar la instalación con:
 
 ## Instalación proyecto
 
-`git clone git@github.com:ramoncardena/flutter-firebase-starter.git`
+`git clone git@github.com:ramoncardena/flutter-firebase-starter.git flutter-firebase-starter`
+
 `cd flutter-firebase-starter`
+
+`flutter packages get`
 
 <p>&nbsp;</p>
 
@@ -113,7 +116,7 @@ Después, descargamos el fichero **_GoogleService-Info.plist_** de configuració
 
 **_Importante:_** Abrimos xCode y con el botón derecho sobre la carpeta Runner/Runner, añadimos el fichero de configuración de Firebase y cerramos xCode.
 
-Además, para que funcione la autenticación con ***Google Sign-In***, tenemos que añadir la clave correspondiente al fichero `ios/Runner/Info.plist`:
+Además, para que funcione la autenticación con **_Google Sign-In_**, tenemos que añadir la clave correspondiente al fichero `ios/Runner/Info.plist`:
 
 ```
 <!-- Google Sign-in Section -->
@@ -123,8 +126,8 @@ Además, para que funcione la autenticación con ***Google Sign-In***, tenemos q
     <key>CFBundleTypeRole</key>
     <string>Editor</string>
     <key>CFBundleURLSchemes</key>
-    <array>	
-<!-- TODO Replace this value: --> 
+    <array>
+<!-- TODO Replace this value: -->
 <!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
 <string>com.googleusercontent.apps.861823949799-vcuujjn0vvnmcvjppkn</string>
     </array>
@@ -230,4 +233,5 @@ Y ejecutamos la app para ver que todo funciona:
 `flutter run -d all`
 
 # Sobre mí
+
 Puedes conocer más sobre mí en [mi página web](https://ramoncardena.com) o leer mis artículos en el [blog](https://ramoncardena.com/blog)
