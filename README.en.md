@@ -1,4 +1,5 @@
 # Flutter base project with Firebase
+
 Other languages: [Spanish](https://github.com/ramoncardena/flutter-firebase-starter/blob/master/README.md)
 
 ## Description
@@ -11,24 +12,23 @@ The application consists of two screens: **Login** and **Home**
 
 In this screen the user can:
 
-* Login to Firebase with email/password
-* Sign in to Firebase with a Google Account
-* Register in Firebase with email/password
+- Login to Firebase with email/password
+- Sign in to Firebase with a Google Account
+- Register in Firebase with email/password
 
 ### Home Screen
 
 Screen that we arrive at once identified and that allows us to end the session.
 
 ### Database
+
 In addition the application creates a document in the database called **activity** in which is saved the time and id of the user each time he logs in.
 
-
 ### Objective
+
 The aim of this project is to **demonstrate the use of Flutter together with Firebase** to quickly create an application with a backend to manage users and authentication and a database to store information.
 
-
 <p>&nbsp;</p>
-
 
 ## Flutter Installation
 
@@ -50,9 +50,11 @@ Once installed, check the installation with:
 
 ## Project installation
 
-`git clone git@github.com:ramoncardena/flutter-firebase-starter.git`
+`git clone git@github.com:ramoncardena/flutter-firebase-starter.git flutter-firebase-starter`
 
 `cd flutter-firebase-starter`
+
+`flutter packages get`
 
 <p>&nbsp;</p>
 
@@ -89,6 +91,7 @@ defaultConfig {
 <p>&nbsp;</p>
 
 ## Execution
+
 Once the ID has been modified, we check that the newly installed application runs on both systems (we connect an Android mobile and an iPhone):
 
 `flutter run -d all`
@@ -98,20 +101,22 @@ Once the ID has been modified, we check that the newly installed application run
 <p>&nbsp;</p>
 
 ## Firebase Configuration
-Detailed information is available in English, [in this article] (https://firebase.google.com/docs/flutter/setup).
+
+Detailed information is available in English, [in this article](https://firebase.google.com/docs/flutter/setup).
 
 Let's go to the [Firebase console](https://console.firebase.google.com/).
 
 We create a new project and once created, we add two applications, one Android and one iOS.
 
 ### iOS Application
+
 We created a new iOS application from the Firebase console and filled in the basic data.
 
 Then, download the configuration file **_GoogleService-Info.plist_**.
 
 **_Important:_** Open xCode and right-click on the Runner/Runner folder, add the Firebase configuration file and close xCode.
 
-In addition, for authentication with ***Google Sign-In*** to work, we have to add the corresponding key to the file `ios/Runner/Info.plist`:
+In addition, for authentication with **_Google Sign-In_** to work, we have to add the corresponding key to the file `ios/Runner/Info.plist`:
 
 ```
 <!-- Google Sign-in Section -->
@@ -121,8 +126,8 @@ In addition, for authentication with ***Google Sign-In*** to work, we have to ad
     <key>CFBundleTypeRole</key>
     <string>Editor</string>
     <key>CFBundleURLSchemes</key>
-    <array>	
-<!-- TODO Replace this value: --> 
+    <array>
+<!-- TODO Replace this value: -->
 <!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
 <string>com.googleusercontent.apps.861823949799-vcuujjn0vvnmcvjppkn</string>
     </array>
@@ -131,8 +136,8 @@ In addition, for authentication with ***Google Sign-In*** to work, we have to ad
 <!-- End of the Google Sign-in Section -->
 ```
 
-
 ### Android Application
+
 We created a new Android application from the Firebase console with the basic data.
 
 To [add the SHA signature key](https://developers.google.com/android/guides/client-auth), from a terminal go to the project folder and run:
@@ -228,4 +233,5 @@ And we run the app to see that everything works:
 `flutter run -d all`
 
 # About me
+
 You can learn more about me at [my website](https://ramoncardena.com/en) or read my articles from my [blog](https://ramoncardena.com/en/blog)
