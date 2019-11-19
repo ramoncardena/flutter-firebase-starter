@@ -88,15 +88,6 @@ defaultConfig {
 }
 ```
 
-<p>&nbsp;</p>
-
-## Execution
-
-Once the ID has been modified, we check that the newly installed application runs on both systems (we connect an Android mobile and an iPhone):
-
-`flutter run -d all`
-
-(or starting the project from Android Studio)
 
 <p>&nbsp;</p>
 
@@ -147,6 +138,8 @@ To [add the SHA signature key](https://developers.google.com/android/guides/clie
 (as password we use `android`)
 
 Then we download the configuration file **google-services.json** and copy it into the project folder: `android/app`.
+
+***The following section is already implemented in the project, it is only informative***
 
 Once copied the file, we have to configure Gradle to work with Firebase. First we edit `android/build.gradle`:
 
@@ -200,7 +193,24 @@ We finally execute:
 
 `flutter packages get`
 
+
+<p>&nbsp;</p>
+
+## Execution
+
+Once the ID has been modified, we check that the newly installed application runs on both systems (we connect an Android mobile and an iPhone):
+
+`flutter packages get`
+
+`flutter run -d all`
+
+(or starting the project from Android Studio)
+
+
 ## Installation of Firebase plugins
+
+_**This part is already implemented in the project, it is only informative**_
+
 
 We add the plugins we need from Firebase in `pubspec.yaml` in the **_dependencies_** section:
 

@@ -90,15 +90,6 @@ defaultConfig {
 
 <p>&nbsp;</p>
 
-## Ejecución
-
-Una vez modificado el ID, comprobamos que la aplicación recién instalada se ejecuta en los dos sistemas (conectamos un móvil Android y un iPhone:
-
-`flutter run -d all`
-
-(o arrancando el proyecto desde Android Studio)
-
-<p>&nbsp;</p>
 
 ## Configuración de Firebase
 
@@ -145,6 +136,9 @@ Para [añadir la clave de firma SHA](https://developers.google.com/android/guide
 `keytool -list -v \ -alias androiddebugkey -keystore ~/.android/debug.keystore`
 
 (como contraseña usamos `android`)
+
+
+_**A partir de esta parte ya está implementada en el proyecto, es solo informativo**_
 
 Después descargamos el fichero **google-services.json** de configuración y lo copiamos en la carpeta del proyecto: `android/app`.
 
@@ -200,7 +194,22 @@ Finalmente ejecutamos:
 
 `flutter packages get`
 
+
+## Ejecución
+
+Una vez modificado el ID, comprobamos que la aplicación recién instalada se ejecuta en los dos sistemas (conectamos un móvil Android y un iPhone:
+
+`flutter packages get`
+
+`flutter run -d all`
+
+(o arrancando el proyecto desde Android Studio)
+
+<p>&nbsp;</p>
+
+
 ## Instalación de los plugins de Firebase
+_**Esta parte ya está implementada en el proyecto, es solo informativa**_
 
 Añadimos los plugins que necesitemos de Firebase en `pubspec.yaml` en la sección de **_dependencies_**:
 
